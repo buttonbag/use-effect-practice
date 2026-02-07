@@ -49,16 +49,12 @@ export default function App() {
 
   function PokemonDetails() {
     return (
-
-
       <div className="pokemon-details">
         <h1>Pokemon Details</h1>
         <h2>{currentPokemon.name}</h2>
         <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${currentPokemon.url.slice(33, -1)}.png`} />
         <button onClick={()=>{setCurrentPokemon()}}>&lt; back</button>
       </div>
-
-
     )
   }
 
